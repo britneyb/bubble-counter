@@ -18,7 +18,10 @@ class Display
     void Begin();
     void Default();
     void failed();
-    void menu(String str);
+    void firstMenu(String str);
+    void turnOnDisplay();
+    void turnOffDisplay();
+    
     void totalTime(time_t time);
 
     void step(int row, int cStep, int cTemp, int cTime, int steps);

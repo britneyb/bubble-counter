@@ -9,23 +9,33 @@
 void Button::Begin()
 {
   pinMode(BUTTON, INPUT);
-  buttonStatus = 0;
+  buttonPushCounter = 0;
+  buttonPreviousValue = false;
 }
 
 void Button::isPushed()
 {
-
+    if(getButtonValue() != buttonPreviousValue)
+    {
+        if(buttonPreviousValue)
+          updateButtonPushCounter();
+        buttonPreviousValue = getButtonValue();
+    }
 }
 
-int Button::getButtonValue()
+boolean Button::getButtonValue()
 {
-  pin_val = digitalRead(BUTTON);
-  return pin_val;
+  return digitalRead(BUTTON);
 }
 
-void Button::updateButtonStatus()
+void Button::updateButtonPushCounter()
 {
-  buttonStatus++;
-  if(buttonStatus >= NUMBER_OF_MENUES)
-    buttonStatus = 0;
+  buttonPushCounter++;
+  if(buttonPushCounter >= NUMBER_OF_MENUES)
+    buttonPushCounter = 0;
+}
+
+int Button::getButtonPushCounter()
+{
+  return buttonPushCounter;
 }

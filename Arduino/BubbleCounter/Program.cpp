@@ -8,9 +8,7 @@
 
 void Program::Default()
 {
-//	Button::Begin();
-	lcd.Begin();
-//	pinMode(BUZZER, OUTPUT);
+       lcd.Begin();
        microPhone.Begin();
        button.Begin();
 
@@ -18,8 +16,9 @@ void Program::Default()
 
 void Program::Receive()
 {
- serialStr.Print("helloooo");
- lcd.menu(String(button.getButtonValue()));
+ 
+ printMenu(button.getButtonPushCounter());
+ button.isPushed();
  
 }
 
@@ -36,5 +35,22 @@ void Program::ProgramFinished()
 //	}
 }
 
+void Program::printMenu(int value)
+{
+  serialStr.Print(String(value));
+  switch(value)
+  {
+    case 0:
+    lcd.turnOffDisplay();
+    break;
+    case 1:
+    lcd.firstMenu("test");
+    break;
+  
+  
+  
+  } 
+
+}
 
 

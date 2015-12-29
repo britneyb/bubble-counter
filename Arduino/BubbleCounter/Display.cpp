@@ -35,14 +35,36 @@ void Display::failed()
 	lcd.print("Fail                ");
 }
 
-void Display::menu(String str)
+void Display::firstMenu(String str)
 {
-	lcd.setCursor(0,0);
-	lcd.print("value:                ");
-        lcd.setCursor(0,1);
-        lcd.print(str);
+
+  turnOnDisplay();
+  
+  lcd.setCursor(0,0);
+  lcd.print("SUM:");//+Stri;ng(getTotalAmountOfSequences()));
+  lcd.setCursor(0,1);
+  lcd.print("MCD:");//+String(hour(currentPosition))+"h "+String(minute(currentPosition))+"min "+String(second(currentPosition))+"sec"); //meantime current day
+  lcd.setCursor(0,2);
+  lcd.print("LS: ");//+String(hour(getNumberOfSecondsSinceLastSequence()))+"h "+String(minute(getNumberOfSecondsSinceLastSequence()))+"min "+String(second(getNumberOfSecondsSinceLastSequence()))+"sec"); // last sequence
+  lcd.setCursor(0,3);
+  lcd.print("UT: ");//+String(day(now())-1)+"days "+String(hour(now()))+"h "+String(minute(now()))+"min");  //uptime
 
 }
+void Display::turnOnDisplay()
+{
+  //lcd.clear();	
+  lcd.backlight();
+  lcd.display(); 
+}
+
+void Display::turnOffDisplay()
+{
+    lcd.clear();
+    lcd.noDisplay();
+    lcd.noBacklight();
+}
+
+
 
 void Display::totalTime(time_t t)
 {

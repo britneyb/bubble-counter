@@ -16,13 +16,14 @@ class Button
 public:
     void Begin();
     void isPushed();
-    int getButtonValue();
-    void updateButtonStatus();
+    boolean getButtonValue();
+    void updateButtonPushCounter();
+    int getButtonPushCounter();
   
 private:
-int buttonStatus;
+int buttonPushCounter;
 int pin_val;
-boolean buttonIsPushed;
+boolean buttonPreviousValue;
 };
 
 

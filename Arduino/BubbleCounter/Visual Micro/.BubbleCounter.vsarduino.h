@@ -22,22 +22,14 @@ extern "C" void __cxa_pure_virtual() {;}
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h"
 #include <BubbleCounter.ino>
-#include <Boil.cpp>
-#include <Boil.h>
 #include <Button.cpp>
 #include <Button.h>
-#include <Cooling.cpp>
-#include <Cooling.h>
 #include <Display.cpp>
 #include <Display.h>
-#include <Mash.cpp>
-#include <Mash.h>
+#include <MicroPhone.cpp>
+#include <MicroPhone.h>
 #include <Pins.h>
 #include <Program.cpp>
 #include <Program.h>
-#include <Relay.cpp>
-#include <Relay.h>
 #include <SerialString.cpp>
 #include <SerialString.h>
-#include <Switch.cpp>
-#include <Switch.h>

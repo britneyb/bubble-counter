@@ -22,6 +22,7 @@ public:
     void Receive();
     void Pause();
    void ProgramFinished();
+   void printMenu(int value);
 
 private:
   	Display lcd; //Our display functions
