@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Kokschema</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="brygg.css" />
+		<script src="kokschema.js"></script>
+	</head>
+	<body>
+		<h1>Kokschema</h1>
+		<div id="main">
+			<div id="divName">
+				<div id="textName">
+					Namn på kokschema<br />
+					<input type="text" id="name" />
+				</div>
+				<div id="textTime">
+					Total koktid<br />
+					<input type="number" id="boilTime" min="0" />
+				</div>
+				<div id="texttemp">
+					Koktemperatur<br />
+					<input type="number" value="99" id="boilTemp" min="0" />
+				</div>
+			</div>
+			<div id="list" style="display:none">
+			</div>
+			<div id="edited" style="display:none">
+				<p>Säkert att du vill spara över?</p>
+				<button id="yes">Ja</button>
+				<button id="no">Nej</button>
+			</div>
+			<div id="steps">
+			</div>
+			<div id="nextStep">
+				<form id="newStep">
+					<p style="font-weight:bold">Nästa steg</p>
+					<p>Humle/Krydda: <input id="hops" type="text" pattern="[a-zA-ZåäöÅÄÖ0-9]+" required /></p>
+					<p>Minuter från slutet: <input id="time" type="number" min="0" required /> Min</p>
+					<input type="submit" id="addStep" value="Lägg till steg">
+				</form>
+			</div>
+			<div id="elements">
+				<p>Antal element för uppvärmning
+				<select id ="warmingUp">
+					<option value="1">1</option>
+	  				<option value="2">2</option>
+	  				<option value="3">3</option>
+	  				<option selected value="4">4</option>
+				</select>
+				</p>
+				<p>Antal element för underhållsvärme
+				<select id ="mHeating">
+					<option selected value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				</p>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+			  <li><a id="mainMenu" href="#">Huvudmeny</a></li>
+			  <li><a id="openScheme" href="#">Öppna Kokschema</a></li>
+			  <li><a id="upLoadScheme" href="#">Ladda upp Kokschema</a></li>
+			  <li><a id="saveScheme" href="#">Spara Kokschema</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+Ska ligga i ...\Arduino\hardware\arduino\avr\cores\arduino\

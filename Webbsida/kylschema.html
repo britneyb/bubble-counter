@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Kylschema</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="brygg.css" />
+		<script src="kylschema.js"></script>
+	</head>
+	<body>
+		<h1>Kylschema</h1>
+		<div id="main">
+			<div id="divName">
+				Namn på Kylschema<br />
+				<input type="text" id="name" />
+			</div>
+			<div id="list" style="display:none">
+			</div>
+			<div id="edited" style="display:none">
+				<p>Säkert att du vill spara över?</p>
+				<button id="yes">Ja</button>
+				<button id="no">Nej</button>
+			</div>
+			<div id="divTemp">
+				Måltemperatur<br />
+				<input type="number" id="temp" />C
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+			  <li><a id="mainMenu" href="#">Huvudmeny</a></li>
+			  <li><a id="openScheme" href="#">Öppna Kylschema</a></li>
+			  <li><a id="upLoadScheme" href="#">Ladda upp Kylschema</a></li>
+			  <li><a id="saveScheme" href="#">Spara Kylschema</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

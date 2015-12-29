@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Mäskschema</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="brygg.css" />
+		<script src="maskschema.js"></script>
+	</head>
+	<body>
+		<h1>Mäskschema</h1>
+		<div id="main">
+			<div id="divName">
+				Namn på Mäskschema<br />
+				<input type="text" id="name" />
+			</div>
+			<div id="list" style="display:none">
+			</div>
+			<div id="edited" style="display:none">
+				<p>Säkert att du vill spara över?</p>
+				<button id="yes">Ja</button>
+				<button id="no">Nej</button>
+			</div>
+			<div id="steps">
+			</div>
+			<div id="nextStep">
+				<form id="newStep">
+					<p style="font-weight:bold">Nästa steg</p>
+					<p>Måltemperatur: <input id="temp" type="number" min="0" max="100" required /> C</p>
+					<p>Längd: <input id="time" type="number" min="0" required /> Min</p>
+					<input type="submit" id="addStep" value="Lägg till steg">
+				</form>
+			</div>
+			<div id="elements">
+				<p>Antal element för uppvärmning
+				<select id ="warmingUp">
+					<option value="1">1</option>
+	  				<option value="2">2</option>
+	  				<option value="3">3</option>
+	  				<option selected value="4">4</option>
+				</select>
+				</p>
+				<p>Antal element för underhållsvärme
+				<select id ="mHeating">
+					<option selected value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				</p>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+			  <li><a id="mainMenu" href="#">Huvudmeny</a></li>
+			  <li><a id="openScheme" href="#">Öppna Mäskschema</a></li>
+			  <li><a id="upLoadScheme" href="#">Ladda upp Mäskschema</a></li>
+			  <li><a id="saveScheme" href="#">Spara Mäskschema</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
