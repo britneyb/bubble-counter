@@ -8,10 +8,15 @@
 
 #include "Bubble.h"
 
+
 // default constructor
 Bubble::Bubble()
 {
 } //Bubble
+
+void Bubble::Begin()
+{
+}
 
 // default destructor
 Bubble::~Bubble()

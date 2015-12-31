@@ -21,7 +21,11 @@ extern "C" void __cxa_pure_virtual() {;}
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\standard\pins_arduino.h" 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino\arduino.h"
-#include <BubbleCounter.ino>
+#include <BubbleCounterSW.ino>
+#include <Bubble.cpp>
+#include <Bubble.h>
+#include <BubbleCounter.cpp>
+#include <BubbleCounter.h>
 #include <Button.cpp>
 #include <Button.h>
 #include <Display.cpp>

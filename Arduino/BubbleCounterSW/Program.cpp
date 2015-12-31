@@ -9,14 +9,13 @@
 void Program::Default()
 {
        lcd.Begin();
-       microPhone.Begin();
        button.Begin();
-
+       bubbleCounter1.Begin(MICRO_PHONE_1); 
 }
 
 void Program::Receive()
 {
- 
+ serialStr.Print(String((bubbleCounter1.microPhone.getMicrophoneValue())?"1":""));
  printMenu(button.getButtonPushCounter());
  button.isPushed();
  
@@ -37,14 +36,14 @@ void Program::ProgramFinished()
 
 void Program::printMenu(int value)
 {
-  serialStr.Print(String(value));
+  //serialStr.Print(String(value));
   switch(value)
   {
     case 0:
     lcd.turnOffDisplay();
     break;
     case 1:
-    lcd.firstMenu("test");
+    lcd.firstMenu(String(bubbleCounter1.microPhone.getMicrophoneValue()));
     break;
   
   

@@ -8,6 +8,7 @@
 
 #ifndef __BUBBLE_H__
 #define __BUBBLE_H__
+#include <time.h>
 
 
 class Bubble
@@ -16,6 +17,11 @@ class Bubble
 public:
 protected:
 private:
+time_t startTime;
+int numberOfBubbles;
+
+
+
 
 //functions
 public:
@@ -25,6 +31,7 @@ protected:
 private:
 	Bubble( const Bubble &c );
 	Bubble& operator=( const Bubble &c );
+  void Begin();
 
 }; //Bubble
 

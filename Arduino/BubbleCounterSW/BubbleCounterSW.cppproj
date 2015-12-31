@@ -13,7 +13,7 @@
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
     <AssemblyName>Bryggverket</AssemblyName>
-    <Name>BubbleCounter</Name>
+    <Name>BubbleCounterSW</Name>
     <RootNamespace>Bryggverket</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
@@ -62,6 +62,7 @@
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
+      <Value></Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
@@ -71,12 +72,8 @@
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time</Value>
       <Value>../../BubbleCounter</Value>
@@ -103,6 +100,7 @@
   </avrgcccpp.compiler.symbols.DefSymbols>
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
+      <Value></Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
@@ -112,12 +110,8 @@
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time</Value>
       <Value>../../BubbleCounter</Value>
@@ -299,6 +293,7 @@ build.arch=AVR
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
+      <Value></Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
@@ -308,12 +303,8 @@ build.arch=AVR
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time</Value>
       <Value>../../BubbleCounter</Value>
@@ -340,6 +331,7 @@ build.arch=AVR
   </avrgcccpp.compiler.symbols.DefSymbols>
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
+      <Value></Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/avr/</Value>
       <Value>c:/program files (x86)/arduino/hardware/tools/avr/avr/include/</Value>
@@ -349,12 +341,8 @@ build.arch=AVR
       <Value>C:/Program Files (x86)/Arduino/libraries</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/LiquidCrystal_I2C2004V1</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/dallas-temperature-control</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/utility</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire/utility</Value>
-      <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/OneWire</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time/utility</Value>
       <Value>//corp.saab.se/users/udc1/u007333/My Documents/Arduino/libraries/Time</Value>
       <Value>../../BubbleCounter</Value>
@@ -515,7 +503,7 @@ build.arch=AVR
     </VisualMicroSettings>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="BubbleCounter.ino">
+    <None Include="BubbleCounterSW.ino">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>
@@ -523,6 +511,18 @@ build.arch=AVR
     <Folder Include="Visual Micro\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bubble.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Bubble.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BubbleCounter.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BubbleCounter.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Button.cpp">
       <SubType>compile</SubType>
     </Compile>

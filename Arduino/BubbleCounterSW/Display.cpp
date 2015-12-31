@@ -41,7 +41,7 @@ void Display::firstMenu(String str)
   turnOnDisplay();
   
   lcd.setCursor(0,0);
-  lcd.print("SUM:");//+Stri;ng(getTotalAmountOfSequences()));
+  lcd.print("SUM:"+str);//+Stri;ng(getTotalAmountOfSequences()));
   lcd.setCursor(0,1);
   lcd.print("MCD:");//+String(hour(currentPosition))+"h "+String(minute(currentPosition))+"min "+String(second(currentPosition))+"sec"); //meantime current day
   lcd.setCursor(0,2);

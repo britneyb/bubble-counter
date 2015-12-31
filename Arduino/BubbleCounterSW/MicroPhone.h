@@ -16,13 +16,14 @@ class MicroPhone
 public:
 protected:
 private:
-int pin_val;
+int microPhoneValue;
+int arduinoPin;
 
 //functions
 public:
 	MicroPhone();
 	~MicroPhone();
-void Begin();
+void Begin(int);
 int getMicrophoneValue();
 
 protected:

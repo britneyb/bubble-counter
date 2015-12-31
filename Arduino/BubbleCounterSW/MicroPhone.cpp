@@ -14,15 +14,16 @@ MicroPhone::MicroPhone()
 {
 } //MicroPhone
 
-void MicroPhone::Begin()
+void MicroPhone::Begin(int pin)
 {
-  pinMode(MICRO_PHONE, INPUT);
+  arduinoPin = pin;
+  pinMode(arduinoPin, INPUT);
 }
 
 int MicroPhone::getMicrophoneValue()
 {
-  pin_val = digitalRead(MICRO_PHONE);
-  return pin_val;
+  microPhoneValue = digitalRead(arduinoPin);
+  return microPhoneValue;
 }
 
 

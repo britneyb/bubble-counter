@@ -12,6 +12,7 @@
 #include "Pins.h"
 #include "Button.h"
 #include "MicroPhone.h"
+#include "BubbleCounter.h"
 
 
 class Program
@@ -27,9 +28,9 @@ public:
 private:
   	Display lcd; //Our display functions
  	SerialString serialStr; //Our Serial functions
-       MicroPhone microPhone;
-       Button button;
 
+       Button button;
+        BubbleCounter bubbleCounter1;
 
 
 };
