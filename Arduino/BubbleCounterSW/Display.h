@@ -15,10 +15,11 @@ class Display
   public:
     Display();
     void Print(String str, int row = 0, int column = 0);
-    void Begin();
+    void initialize();
     void Default();
     void failed();
     void firstMenu(String str);
+    void testMenu(time_t aStartTime, int aNumberOfBubbles);
     void turnOnDisplay();
     void turnOffDisplay();
     

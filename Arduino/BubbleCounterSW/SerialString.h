@@ -11,6 +11,7 @@ class SerialString
 {
   public:
     void Print(String str);
+    void Println(String str);
     String Read();
 };
 

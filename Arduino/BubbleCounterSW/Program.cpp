@@ -6,18 +6,21 @@
 #include "Program.h"
 
 
-void Program::Default()
+void Program::initialize()
 {
-       lcd.Begin();
-       button.Begin();
-       bubbleCounter1.Begin(MICRO_PHONE_1); 
+       lcd.initialize();
+       button.initialize();
+       bubbleCounter1.initialize(MICRO_PHONE_1); 
 }
 
-void Program::Receive()
+void Program::updateMe()
 {
- serialStr.Print(String((bubbleCounter1.microPhone.getMicrophoneValue())?"1":""));
+ serialStr.Println("value:"+String(bubbleCounter1.microPhone.valueHasChanged())+" "+String(bubbleCounter1.microPhone.getLastChange()));
+ //serialStr.Print("starttime:"+String(bubbleCounter1.bubble[0]->startTime));
  printMenu(button.getButtonPushCounter());
  button.isPushed();
+ bubbleCounter1.updateMe();
+ 
  
 }
 
@@ -43,7 +46,7 @@ void Program::printMenu(int value)
     lcd.turnOffDisplay();
     break;
     case 1:
-    lcd.firstMenu(String(bubbleCounter1.microPhone.getMicrophoneValue()));
+    lcd.testMenu(bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getStartTime(), bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getNumberOfBubbles());
     break;
   
   

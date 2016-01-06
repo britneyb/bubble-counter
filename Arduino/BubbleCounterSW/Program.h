@@ -19,8 +19,8 @@ class Program
 {
 
 public:
-    void Default();
-    void Receive();
+    void initialize();
+    void updateMe();
     void Pause();
    void ProgramFinished();
    void printMenu(int value);

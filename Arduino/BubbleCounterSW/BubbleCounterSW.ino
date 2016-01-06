@@ -15,10 +15,10 @@ Program program;
 void setup()
 {
   	Serial.begin(9600);
-	program.Default();
+	program.initialize();
 }
 
 void loop()
 {
-  	program.Receive(); 
+  	program.updateMe(); 
 }

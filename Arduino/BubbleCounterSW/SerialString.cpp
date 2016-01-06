@@ -11,6 +11,11 @@ void SerialString::Print(String str)
 	Serial.print(str);	
 }
 
+void SerialString::Println(String str)
+{
+	Serial.println(str);	
+}
+
 
 String SerialString::Read()
 {

@@ -2,7 +2,7 @@
 * Bubble.h
 *
 * Created: 2015-12-29 15:38:48
-* Author: u007333
+* Author: Mattias Bornvall
 */
 
 
@@ -27,11 +27,17 @@ int numberOfBubbles;
 public:
 	Bubble();
 	~Bubble();
+int getStartTime();
+int getNumberOfBubbles();
+void setStartTIme(time_t);
+void setNumberOfBubbles(int );
+
 protected:
 private:
 	Bubble( const Bubble &c );
 	Bubble& operator=( const Bubble &c );
-  void Begin();
+  void initialize();
+
 
 }; //Bubble
 

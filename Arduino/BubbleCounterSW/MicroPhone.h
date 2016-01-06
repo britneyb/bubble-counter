@@ -9,6 +9,7 @@
 #ifndef __MICROPHONE_H__
 #define __MICROPHONE_H__
 
+#include <time.h>
 
 class MicroPhone
 {
@@ -18,13 +19,18 @@ protected:
 private:
 int microPhoneValue;
 int arduinoPin;
+bool currentValue;
+time_t lastChange;
 
 //functions
 public:
 	MicroPhone();
 	~MicroPhone();
-void Begin(int);
+void initialize(int);
 int getMicrophoneValue();
+bool valueHasChanged();
+void updateMe();
+time_t getLastChange();
 
 protected:
 private:

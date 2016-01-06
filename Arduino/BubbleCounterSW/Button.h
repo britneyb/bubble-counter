@@ -14,7 +14,7 @@ class Button
 {
 
 public:
-    void Begin();
+    void initialize();
     void isPushed();
     boolean getButtonValue();
     void updateButtonPushCounter();

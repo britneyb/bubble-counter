@@ -6,7 +6,7 @@
 #include "Button.h"
 
 
-void Button::Begin()
+void Button::initialize()
 {
   pinMode(BUTTON, INPUT);
   buttonPushCounter = 0;
