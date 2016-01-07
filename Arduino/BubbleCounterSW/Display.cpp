@@ -35,17 +35,17 @@ void Display::failed()
 	lcd.print("Fail                ");
 }
 
-void Display::firstMenu(String str)
+void Display::firstMenu(time_t aTimeSinceLastBubble)
 {
 
   turnOnDisplay();
   
   lcd.setCursor(0,0);
-  lcd.print("SUM:"+str);//+Stri;ng(getTotalAmountOfSequences()));
+  lcd.print("SUM:");//+Stri;ng(getTotalAmountOfSequences()));
   lcd.setCursor(0,1);
   lcd.print("MCD:");//+String(hour(currentPosition))+"h "+String(minute(currentPosition))+"min "+String(second(currentPosition))+"sec"); //meantime current day
   lcd.setCursor(0,2);
-  lcd.print("LS: ");//+String(hour(getNumberOfSecondsSinceLastSequence()))+"h "+String(minute(getNumberOfSecondsSinceLastSequence()))+"min "+String(second(getNumberOfSecondsSinceLastSequence()))+"sec"); // last sequence
+  lcd.print("LS: "+String(hour(aTimeSinceLastBubble))+"h "+String(minute(aTimeSinceLastBubble))+"min "+String(second(aTimeSinceLastBubble))+"sec"); // last sequence
   lcd.setCursor(0,3);
   lcd.print("UT: ");//+String(day(now())-1)+"days "+String(hour(now()))+"h "+String(minute(now()))+"min");  //uptime
 
@@ -62,7 +62,7 @@ void Display::testMenu(time_t aStartTime, int aNumberOfBubbles)
   lcd.setCursor(0,2);
   lcd.print("LS: ");//+String(hour(getNumberOfSecondsSinceLastSequence()))+"h "+String(minute(getNumberOfSecondsSinceLastSequence()))+"min "+String(second(getNumberOfSecondsSinceLastSequence()))+"sec"); // last sequence
   lcd.setCursor(0,3);
-  lcd.print("UT: ");//+String(day(now())-1)+"days "+String(hour(now()))+"h "+String(minute(now()))+"min");  //uptime
+  lcd.print("UT: "+String(day(now())-1)+"days "+String(hour(now()))+"h "+String(minute(now()))+"min");  //uptime
 }
 
 

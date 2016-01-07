@@ -13,6 +13,6 @@
 
 
 //Button class
-#define NUMBER_OF_MENUES 2     // Number of menus to switch between 0=black (LCD = black)
+#define NUMBER_OF_MENUES 3     // Number of menus to switch between 0=black (LCD = black)
 #define NUMBER_OF_HOURS 4  //meassure number of bubbles the last x hours
 #define MIN_SEC_BETWEEN_TWO_BUBBLE 2 //number of seconds that need to go by before a new bubble sequence has occured.

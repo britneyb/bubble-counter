@@ -2,7 +2,7 @@
 * MicroPhone.h
 *
 * Created: 2015-12-28 23:44:04
-* Author: u007333
+* Author: Mattias Bornvall
 */
 
 

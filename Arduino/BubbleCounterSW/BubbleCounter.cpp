@@ -2,7 +2,7 @@
 * BubbleCounter.cpp
 *
 * Created: 2015-12-29 15:27:27
-* Author: u007333
+* Author: Mattias Bornvall
 */
 
 
@@ -25,6 +25,8 @@ void BubbleCounter::initialize(int pin)
   } 
  microPhone.initialize(pin);
  currentPosInArray=0;
+ lastBubble=0;
+ 
   
 }
 
@@ -70,7 +72,7 @@ void BubbleCounter::addNewBubbleToArray(time_t aStartTime)
      bubble[currentPosInArray]->setNumberOfBubbles(1);
    } 
 
-     
+   lastBubble = aStartTime;
      serialStr.Println("aStartTime:"+String(aStartTime) + " getStartTIme:"+String(bubble[currentPosInArray]->getStartTime())+ " getNumberOfBubbles:"+String(bubble[currentPosInArray]->getNumberOfBubbles())+ " currentPosInArray:"+String(currentPosInArray));
 }
 
@@ -79,7 +81,10 @@ int BubbleCounter::getCurrentPosInArray()
   return currentPosInArray;
 }
 
-
+int BubbleCounter::timeSinceLastBubble()
+{
+  return(now()-lastBubble);
+}
 
 // default destructor
 BubbleCounter::~BubbleCounter()

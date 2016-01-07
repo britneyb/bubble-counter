@@ -15,7 +15,7 @@ void Program::initialize()
 
 void Program::updateMe()
 {
- serialStr.Println("value:"+String(bubbleCounter1.microPhone.valueHasChanged())+" "+String(bubbleCounter1.microPhone.getLastChange()));
+ //serialStr.Println("value:"+String(bubbleCounter1.microPhone.valueHasChanged())+" "+String(bubbleCounter1.microPhone.getLastChange()));
  //serialStr.Print("starttime:"+String(bubbleCounter1.bubble[0]->startTime));
  printMenu(button.getButtonPushCounter());
  button.isPushed();
@@ -43,13 +43,17 @@ void Program::printMenu(int value)
   switch(value)
   {
     case 0:
-    lcd.turnOffDisplay();
-    break;
+      lcd.turnOffDisplay();
+      break;
     case 1:
-    lcd.testMenu(bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getStartTime(), bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getNumberOfBubbles());
-    break;
-  
-  
+      lcd.testMenu(bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getStartTime(), bubbleCounter1.bubble[bubbleCounter1.getCurrentPosInArray()]->getNumberOfBubbles());
+      break;
+    case 2:
+      lcd.firstMenu(bubbleCounter1.timeSinceLastBubble());
+      break;
+    default:
+      lcd.turnOffDisplay();
+      break;
   
   } 
 

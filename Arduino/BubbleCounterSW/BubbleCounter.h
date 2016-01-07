@@ -2,7 +2,7 @@
 * BubbleCounter.h
 *
 * Created: 2015-12-29 15:27:28
-* Author: u007333
+* Author: Mattias Bornvall
 */
 
 
@@ -21,6 +21,7 @@ public:
 MicroPhone microPhone;
 int currentPosInArray;
         Bubble *bubble[NUMBER_OF_HOURS]; //pos 0 = current hour, pos 1= previous hour
+time_t lastBubble;
 protected:
 private:
 SerialString serialStr; //Our Serial functions
@@ -34,6 +35,7 @@ void initialize(int);
 void nextPositionInArray();
 void addNewBubbleToArray(time_t);
 int getCurrentPosInArray();
+int timeSinceLastBubble();
 protected:
 
 private:

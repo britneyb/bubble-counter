@@ -18,7 +18,7 @@ class Display
     void initialize();
     void Default();
     void failed();
-    void firstMenu(String str);
+    void firstMenu(time_t);
     void testMenu(time_t aStartTime, int aNumberOfBubbles);
     void turnOnDisplay();
     void turnOffDisplay();
